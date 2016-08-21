@@ -14,13 +14,17 @@ class ArticleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+//        siteButton.addTarget(self, action: "tapBtn:", forControlEvents: UIControlEvents.TouchUpInside)
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
     
+//    func tapBtn(sender :UIButton){
+//        var btn = sender as! UIButton
+//        var cell = btn.superview!.superview as! UITableViewCell
+//    }
 }

@@ -18,8 +18,10 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
     let red = UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
     let black = UIColor(red: 50.0 / 255, green: 56.0 / 255, blue: 60.0 / 255, alpha: 1.0)
     
-    var articles: Array<Article>?
-    
+    let a :[String] = ["ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ", "いいいいいいいいいいい", "うう", "えええええ", "おおおおおおおおおおおおお"]
+    let b :[String] = ["かかかかかかかかか", "ききききききききききききききききききききき", "くくくく", "けけけけけけけけけけけけけ", "こここここここここここここ", "ささささささささささ", "ししししししししししししし"]
+    let c :[String] = ["すすす", "せせせせせせせせせせせせ", "そそそそそそそそそそそ", "たたたたたたたた", "ちちち"]
+    let d :[String] = ["つつつつつつ", "ててて", "とととととととと", "ななななな", "にににににに", "ぬぬぬぬぬぬぬぬぬぬぬ"]
     
     
     override func viewDidLoad() {
@@ -30,10 +32,10 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
         self.sitesScrollView.pagingEnabled = true
         
         //setArticleTableViewに代入する値、4ページ分
-        setArticleTableView(0)
-        setArticleTableView(self.view.frame.width)
-        setArticleTableView(self.view.frame.width * 2)
-        setArticleTableView(self.view.frame.width * 3)
+        setArticleTableView(0, data:a )
+        setArticleTableView(self.view.frame.width, data:b )
+        setArticleTableView(self.view.frame.width * 2, data:c )
+        setArticleTableView(self.view.frame.width * 3, data:d )
         
         
         setTabButton(self.view.frame.width/8, text:"1", color: blue, tag: 1)
@@ -41,21 +43,15 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
         setTabButton(self.view.frame.width/8 * 5, text:"3", color: yellow, tag: 3)
         setTabButton(self.view.frame.width/8 * 7, text:"4", color:  black, tag: 4)
         
-        
-        
-        articles = [
-            Article(title: "私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。"),
-            Article(title: "この書の世に出づるにいたりたるは、函館にある秦慶治氏、及び信濃にある神津猛氏のたまものなり。労作終るの日にあたりて、このものがたりを二人の恩人のまへにさゝぐ。"),
-            Article(title: "散文に二種あると考へてゐるが、一を小説、他を作文とかりに言つておく。"),
-            Article(title: "機敏な晩熟児といふべき此の男が、現に存するのだから僕は機敏な晩熟児が如何にして存るママかその様を語らうと思ふ。")
-        ]
-        
     }
     
-    func setArticleTableView(x: CGFloat) {
+    
+    func setArticleTableView(x: CGFloat,data: Array<String>) {
         let frame = CGRectMake(x, 0, self.view.frame.width, sitesScrollView.frame.height)
         let articleTableView = ArticleTableView(frame: frame, style: UITableViewStyle.Plain)
-        articleTableView.estimatedRowHeight = 90
+        articleTableView.data = data
+        //セルの高さ可変.ArticleTableView内のheightForRowAtIndexPathの記載いらない。
+        articleTableView.estimatedRowHeight = 50
         articleTableView.rowHeight = UITableViewAutomaticDimension
         sitesScrollView.addSubview(articleTableView)
     }
@@ -126,6 +122,6 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
         button.layer.borderColor = button.titleLabel?.textColor.CGColor
     }
     
-    
+ 
 }
 

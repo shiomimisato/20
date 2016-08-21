@@ -9,9 +9,9 @@
 import UIKit
 
 class Article: NSObject {
-     var title = ""
+     var text = ""
     
-    init(title: String) {
-        self.title = title
+    init(text: String) {
+        self.text = text
     }
 }
