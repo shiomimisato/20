@@ -44,7 +44,7 @@ class ArticleTableView: UITableView, UITableViewDelegate, UITableViewDataSource 
     //cellの内容
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ArticleTableViewCell", forIndexPath: indexPath) as! ArticleTableViewCell
-            cell.siteText!.text! = data[indexPath.row] //セルの中に情報を入れてあげる
+            cell.siteTextLabel!.text! = data[indexPath.row] //セルの中に情報を入れてあげる
             return cell
         }
     

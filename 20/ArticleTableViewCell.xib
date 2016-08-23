@@ -45,8 +45,8 @@
             </tableViewCellContentView>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
-                <outlet property="siteButton" destination="RYO-KC-yQO" id="NRz-Eo-itT"/>
-                <outlet property="siteText" destination="yJp-ZU-Eeh" id="9Cy-eu-gvU"/>
+                <outlet property="siteButton" destination="RYO-KC-yQO" id="Hd5-Pv-NSv"/>
+                <outlet property="siteTextLabel" destination="yJp-ZU-Eeh" id="6Cj-F4-jC3"/>
             </connections>
             <point key="canvasLocation" x="175" y="414"/>
         </tableViewCell>

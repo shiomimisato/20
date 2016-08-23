@@ -18,10 +18,10 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
     let red = UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
     let black = UIColor(red: 50.0 / 255, green: 56.0 / 255, blue: 60.0 / 255, alpha: 1.0)
     
-    let a :[String] = ["ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ", "いいいいいいいいいいい", "うう", "えええええ", "おおおおおおおおおおおおお"]
-    let b :[String] = ["かかかかかかかかか", "ききききききききききききききききききききき", "くくくく", "けけけけけけけけけけけけけ", "こここここここここここここ", "ささささささささささ", "ししししししししししししし"]
-    let c :[String] = ["すすす", "せせせせせせせせせせせせ", "そそそそそそそそそそそ", "たたたたたたたた", "ちちち"]
-    let d :[String] = ["つつつつつつ", "ててて", "とととととととと", "ななななな", "にににににに", "ぬぬぬぬぬぬぬぬぬぬぬ"]
+    let textsA :[String] = ["ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ", "いいいいいいいいいいい", "うう", "えええええ", "おおおおおおおおおおおおお"]
+    let textArrayB :[String] = ["かかかかかかかかか", "ききききききききききききききききききききき", "くくくく", "けけけけけけけけけけけけけ", "こここここここここここここ", "ささささささささささ", "ししししししししししししし"]
+    let textsArrayC :[String] = ["すすす", "せせせせせせせせせせせせ", "そそそそそそそそそそそ", "たたたたたたたた", "ちちち"]
+    let textsArrayD :[String] = ["つつつつつつ", "ててて", "とととととととと", "ななななな", "にににににに", "ぬぬぬぬぬぬぬぬぬぬぬ"]
     
     
     override func viewDidLoad() {
@@ -32,10 +32,10 @@ class ArticleViewController: UIViewController, UIScrollViewDelegate {
         self.sitesScrollView.pagingEnabled = true
         
         //setArticleTableViewに代入する値、4ページ分
-        setArticleTableView(0, data:a )
-        setArticleTableView(self.view.frame.width, data:b )
-        setArticleTableView(self.view.frame.width * 2, data:c )
-        setArticleTableView(self.view.frame.width * 3, data:d )
+        setArticleTableView(0, data:textsA )
+        setArticleTableView(self.view.frame.width, data:textArrayB )
+        setArticleTableView(self.view.frame.width * 2, data:textsArrayC )
+        setArticleTableView(self.view.frame.width * 3, data:textsArrayD )
         
         
         setTabButton(self.view.frame.width/8, text:"1", color: blue, tag: 1)

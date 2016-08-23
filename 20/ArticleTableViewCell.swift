@@ -9,12 +9,14 @@
 import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
-    @IBOutlet weak var siteText: UILabel!
     @IBOutlet weak var siteButton: UIButton!
+    @IBOutlet weak var siteTextLabel: UILabel!
+    
+    let articleStocks = ArticleStocks.sharedInstance
 
     override func awakeFromNib() {
         super.awakeFromNib()
-//        siteButton.addTarget(self, action: "tapBtn:", forControlEvents: UIControlEvents.TouchUpInside)
+        siteButton.addTarget(self, action: #selector(ArticleTableViewCell.tapBtn(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
@@ -23,8 +25,13 @@ class ArticleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-//    func tapBtn(sender :UIButton){
-//        var btn = sender as! UIButton
-//        var cell = btn.superview!.superview as! UITableViewCell
-//    }
+    func tapBtn(sender :UIButton){
+        let text = siteTextLabel.text
+        let article = Article(text: text!)
+        self.articleStocks.addArticleStocks(article)
+        
+        
+//        ArticleStocks.sharedInstance.addArticleStocks(Article(text: siteText.text!))
+        
+    }
 }

@@ -18,8 +18,12 @@
 		826FC7871D688570001DA9BF /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7851D688570001DA9BF /* ArticleTableViewCell.swift */; };
 		826FC7881D688570001DA9BF /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826FC7861D688570001DA9BF /* ArticleTableViewCell.xib */; };
 		826FC78C1D68988B001DA9BF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC78B1D68988B001DA9BF /* Article.swift */; };
-		826FC78E1D6988C6001DA9BF /* MyPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC78D1D6988C6001DA9BF /* MyPageTableViewController.swift */; };
-		826FC7911D698BCF001DA9BF /* ArticleStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7901D698BCF001DA9BF /* ArticleStocks.swift */; };
+		826FC7931D69AE1F001DA9BF /* MyPageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7921D69AE1F001DA9BF /* MyPageTableViewController.swift */; };
+		826FC7971D69B2C9001DA9BF /* ArticleStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7961D69B2C9001DA9BF /* ArticleStocks.swift */; };
+		826FC79A1D69B7BE001DA9BF /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7981D69B7BE001DA9BF /* MyPageTableViewCell.swift */; };
+		826FC79B1D69B7BE001DA9BF /* MyPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826FC7991D69B7BE001DA9BF /* MyPageTableViewCell.xib */; };
+		826FC79D1D69D103001DA9BF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC79C1D69D103001DA9BF /* AddViewController.swift */; };
+		826FC7AB1D6AEF0E001DA9BF /* CellHSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826FC7AA1D6AEF0E001DA9BF /* CellHSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +61,12 @@
 		826FC7851D688570001DA9BF /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		826FC7861D688570001DA9BF /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		826FC78B1D68988B001DA9BF /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		826FC78D1D6988C6001DA9BF /* MyPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageTableViewController.swift; path = ../../MyPageTableViewController.swift; sourceTree = "<group>"; };
-		826FC7901D698BCF001DA9BF /* ArticleStocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleStocks.swift; path = ../ArticleStocks.swift; sourceTree = "<group>"; };
+		826FC7921D69AE1F001DA9BF /* MyPageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageTableViewController.swift; sourceTree = "<group>"; };
+		826FC7961D69B2C9001DA9BF /* ArticleStocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleStocks.swift; sourceTree = "<group>"; };
+		826FC7981D69B7BE001DA9BF /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		826FC7991D69B7BE001DA9BF /* MyPageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPageTableViewCell.xib; sourceTree = "<group>"; };
+		826FC79C1D69D103001DA9BF /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		826FC7AA1D6AEF0E001DA9BF /* CellHSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellHSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +150,10 @@
 		826FC7831D688517001DA9BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				826FC78D1D6988C6001DA9BF /* MyPageTableViewController.swift */,
 				826FC7551D688253001DA9BF /* ArticleViewController.swift */,
+				826FC7921D69AE1F001DA9BF /* MyPageTableViewController.swift */,
+				826FC79C1D69D103001DA9BF /* AddViewController.swift */,
+				826FC7AA1D6AEF0E001DA9BF /* CellHSViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -154,6 +164,8 @@
 				826FC7811D68850F001DA9BF /* ArticleTableView.swift */,
 				826FC7851D688570001DA9BF /* ArticleTableViewCell.swift */,
 				826FC7861D688570001DA9BF /* ArticleTableViewCell.xib */,
+				826FC7981D69B7BE001DA9BF /* MyPageTableViewCell.swift */,
+				826FC7991D69B7BE001DA9BF /* MyPageTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -161,8 +173,8 @@
 		826FC78F1D698B9C001DA9BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				826FC7901D698BCF001DA9BF /* ArticleStocks.swift */,
 				826FC78B1D68988B001DA9BF /* Article.swift */,
+				826FC7961D69B2C9001DA9BF /* ArticleStocks.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				826FC7881D688570001DA9BF /* ArticleTableViewCell.xib in Resources */,
+				826FC79B1D69B7BE001DA9BF /* MyPageTableViewCell.xib in Resources */,
 				826FC75E1D688253001DA9BF /* LaunchScreen.storyboard in Resources */,
 				826FC75B1D688253001DA9BF /* Assets.xcassets in Resources */,
 				826FC7591D688253001DA9BF /* Main.storyboard in Resources */,
@@ -300,9 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				826FC7871D688570001DA9BF /* ArticleTableViewCell.swift in Sources */,
+				826FC7AB1D6AEF0E001DA9BF /* CellHSViewController.swift in Sources */,
 				826FC7561D688253001DA9BF /* ArticleViewController.swift in Sources */,
-				826FC78E1D6988C6001DA9BF /* MyPageTableViewController.swift in Sources */,
-				826FC7911D698BCF001DA9BF /* ArticleStocks.swift in Sources */,
+				826FC79D1D69D103001DA9BF /* AddViewController.swift in Sources */,
+				826FC79A1D69B7BE001DA9BF /* MyPageTableViewCell.swift in Sources */,
+				826FC7931D69AE1F001DA9BF /* MyPageTableViewController.swift in Sources */,
+				826FC7971D69B2C9001DA9BF /* ArticleStocks.swift in Sources */,
 				826FC7821D68850F001DA9BF /* ArticleTableView.swift in Sources */,
 				826FC7541D688253001DA9BF /* AppDelegate.swift in Sources */,
 				826FC78C1D68988B001DA9BF /* Article.swift in Sources */,
